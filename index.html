@@ -1,6 +1,19 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <script type="text/javascript">
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('./sw.js', {scope: '/'})
+            .then(function(reg) {
+                // registration worked
+                reg.update();
+                // console.log('Registration succeeded. Scope is ' + reg.scope);
+            }).catch(function(error) {
+                // registration failed
+                console.log('Registration failed with ' + error);
+            });
+            }
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cruz Tech</title>
@@ -9,13 +22,7 @@
     
     <script type="text/javascript" src="./assets/js/jquery.js"></script>
     <link rel="manifest" href="manifest.json">
-    <script type="text/javascript">
-        if ('serviceWorker' in navigator ) {
-            navigator.serviceWorker.register('sw.js')
-                .then(reg => console.info('registered sw', reg))
-                .catch(err => console.error('error registering sw', err));
-        }
-    </script>
+
     <meta name="theme-color" content="#1b1549">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.10/jquery.mask.js"></script> 
     

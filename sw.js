@@ -4,11 +4,10 @@ self.addEventListener('install', function(event) {
   event.waitUntil(
     caches.open(cache_NAME).then(function(cache) {
       return cache.addAll([
-    '/assets/css/planos.css',
-    '/assets/css/cobertura.css',
-    '/assets/css/main.css',
-    '/assets/img/logo.png',
-    '/index.html',
+      '/offline',
+      '/',
+      '/cobertura',
+      '/planos',
     '/manifest.json',
       ]);
     })
@@ -30,6 +29,7 @@ self.addEventListener('activate', function activator(event) {
     })
   );
 });
+
 self.addEventListener('fetch', function(event) {
   event.respondWith(async function() {
       try {
