@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cruz Tech</title>
+    <link rel="stylesheet" href="./assets/css/main.css">
+    
+    <script type="text/javascript" src="./assets/js/jquery.js"></script>
+    <link rel="stylesheet" href="./assets/css/planos.css">
+    
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+
+    <script type="text/javascript" src="./assets/js/bootstrap.min.js"></script>
+    
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg  ">
+        
+        <img src="./assets/img/logo.svg"  />
+        
+        <button class="navbar-toggler btn-outline-light p-3 text-center" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        |||
+        </button>
+
+        <div class="collapse navbar-collapse navbar-nav  menu list-menu" id="navbarSupportedContent">    
+            <a type="button" href="./index.html" class="btn-menu   ">Home</a>
+            <a type="button"  href='./planos.html' class="btn-menu    ">Planos</a>
+            <a type="button"  href='./cobertura.html'class="btn-menu ">Cobertura</a>     
+        </div>
+    </nav>
+
+    <div class="container" style=" display: flex; justify-content: space-evenly; margin-top: 5%;">   
+        <div class="card text-white bg-info h-25 plano1" style="max-width: 20rem;">
+            <div class="card-header">💰 Plano Básico 💰</div>
+            <div class="card-body">
+                <span class="badge badge-light">Plano mais economia</span>
+                <h1 class="card-title pricing-card-title">R$45<small class="text-muted"> / Mensal</small><span class='text-danger'>*</span></h1>
+                <ul class="list-group list-group-flush  bg-danger text-secondary" >
+                    <li class="list-group-item   p-0 text-light bg-info"><span class="text-success">⏩</span><B> 8</B> MEGAS</li>
+                    <li class="list-group-item   p-0 text-light bg-info"><span class="text-success">⏩</span> Assístencia Técnica 24H</li>
+                    <li class="list-group-item   p-0 text-light bg-info"><span class="text-success">⏩</span> Serviço de Qualidade</li>
+                    <li class="list-group-item   p-0 text-light bg-info"><span class="text-success">⏩</span> Pagamento via Carne</li>
+                    <li class="list-group-item   p-0 text-light bg-info"><span class="text-success">⏩</span> Plano econômico</li>
+                </ul>
+                <a href="/#plano1" class="btn mt-1 btn-outline-light col-md-12">Contratar</a>
+            </div>
+          </div>
+
+          <div class="card text-white shadow-lg plano2 border border-secondary text-secondary" style="max-width: 24rem;  height:380px; margin-left: 15px; margin-right: 15px;" >
+            <div class="card-header">🔥 Plano Estrela 🔥</div>
+            <div class="card-body bg-light">
+                <span class="badge badge-secondary">Plano custo benéficio</span>
+                <h1 class="card-title pricing-card-title">R$50 <small class="text-muted">/ Mensal</small><span class='text-danger'>*</span></h1>
+                <ul class="list-group list-group-flush  text-secondary">
+                    <li class="list-group-item   p-0 text-secondary bg-light"><span class="text-success">⏩</span><B> 10</B> MEGAS</li>
+                    <li class="list-group-item   p-0 text-secondary bg-light"><span class="text-success">⏩</span> Assístencia Técnica 24H</li>
+                    <li class="list-group-item   p-0 text-secondary bg-light"><span class="text-success">⏩</span> Serviço de Qualidade</li>
+                    <li class="list-group-item   p-0 text-secondary bg-light"><span class="text-success">⏩</span> Pagamento via Carne</li>
+                    <li class="list-group-item   p-0 text-secondary" ><span class="text-success">⏩</span> Garantia no Roteador da empresa</li>
+                    <a href="/#plano2" class="btn mt-4 btn-outline-dark col-md-12">Contratar</a>
+                </ul>
+            </div>
+          </div>
+
+          <div class="card text-white  plano3 bg-danger h-25" style="max-width: 20rem; ">
+            <div class="card-header ">🚀 Plano Otimizado 🚀</div>
+            <div class="card-body" >
+                <span class="badge badge-light">Plano alto desempenho</span>
+                <h1 class="card-title pricing-card-title">R$65 <small class="text-dark"> / Mensal</small><span class='text-dark'>*</span></h1>
+                <ul class="list-group list-group-flush  bg-danger text-secondary" >
+                    <li class="list-group-item   p-0 bg-danger text-white "><span class="text-success">⏩</span><B> 15</B> MEGAS</li>
+                    <li class="list-group-item   p-0 bg-danger text-white "><span class="text-success">⏩</span> Assístencia Técnica 24H</li>
+                    <li class="list-group-item   p-0 bg-danger text-white "><span class="text-success">⏩</span> Serviço de Qualidade</li>
+                    <li class="list-group-item   p-0 bg-danger text-white "><span class="text-success">⏩</span> Pagamento via Carne</li>
+                    <li class="list-group-item   p-0 bg-danger text-white "><span class="text-success">⏩</span> Garantia no Roteador da empresa</li>
+                </ul>
+                <a href="/#plano3" class="btn mt-1 btn-outline-light col-md-12">Contratar</a>
+            </div>  
+          </div>
+        </div>
+        <img  src="./assets/img/logo-blue.png" id="img" style="bottom:0; max-width:38em; right:-1%; position: fixed; z-index:-1;" class="rounded    col-md-8"  alt="Responsive image">
+</body>
+</html>

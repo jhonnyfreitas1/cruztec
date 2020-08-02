@@ -1,0 +1,16 @@
+{
+    "name": "CruzTec",
+    "short_name": "CruzTec",
+    "theme_color": "#00A859",
+    "background_color": "#FFFFFF",
+    "display": "standalone",
+    "start_url": "index.html",
+    "scope": "/",
+    "icons": [
+      {
+        "src": "./assets/img/logo.svg",
+        "sizes": "512x512",
+        "type": "image/svg"
+      }
+    ]
+  }
