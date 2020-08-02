@@ -4,14 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cruz Tech</title>
+    
     <link rel="stylesheet" href="./assets/css/main.css">
+    
     <script type="text/javascript" src="./assets/js/jquery.js"></script>
     <link rel="manifest" href="/manifest.json">
-    <script>
+    <script type="text/javascript">
         if ('serviceWorker' in navigator ) {
-        navigator.serviceWorker.register('sw.js')
-            .then(reg => console.info('registered sw', reg))
-            .catch(err => console.error('error registering sw', err));
+            navigator.serviceWorker.register('sw.js')
+                .then(reg => console.info('registered sw', reg))
+                .catch(err => console.error('error registering sw', err));
         }
     </script>
     <meta name="theme-color" content="#1b1549">

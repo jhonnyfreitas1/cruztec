@@ -1,4 +1,4 @@
-const cache_NAME = 'pwa=v1 - '+ new Date();
+let  cache_NAME = 'pwa=v1 - '+ new Date();
 
 self.addEventListener('install', function(event) {
   event.waitUntil(
@@ -7,7 +7,7 @@ self.addEventListener('install', function(event) {
     '/assets/css/planos.css',
     '/assets/css/cobertura.css',
     '/assets/css/main.css',
-    '/assets/img/logo.svg',
+    '/assets/img/logo.png',
     '/index.html',
     '/manifest.json',
       ]);
@@ -38,7 +38,3 @@ self.addEventListener('fetch', function (event) {
     })
   );
 });
-
-if(!navigator.onLine){
-  document.write('<h1>ta sem itnernet</h1>')
-}
