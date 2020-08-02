@@ -6,8 +6,16 @@
     <title>Cruz Tech</title>
     <link rel="stylesheet" href="./assets/css/main.css">
     <script type="text/javascript" src="./assets/js/jquery.js"></script>
-    <meta name="theme-color">
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.10/jquery.mask.js"></script> -->
+    <link rel="manifest" href="/manifest.json">
+    <script>
+        if ('serviceWorker' in navigator ) {
+        navigator.serviceWorker.register('sw.js')
+            .then(reg => console.info('registered sw', reg))
+            .catch(err => console.error('error registering sw', err));
+        }
+    </script>
+    <meta name="theme-color" content="#1b1549">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.10/jquery.mask.js"></script> 
     
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
 
@@ -17,14 +25,14 @@
 <body>
     <nav class="navbar navbar-expand-lg  ">
         
-        <img src="./assets/img/logo.svg"  />
+        <img src="./assets/img/logo.png"  />
         
         <button class="navbar-toggler btn-outline-light p-3 text-center" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         |||
         </button>
 
         <div class="collapse navbar-collapse navbar-nav  menu list-menu" id="navbarSupportedContent">    
-            <a type="button" href="./index.html" class="btn-menu    ">Home</a>
+            <a type="button" href="/" class="btn-menu    ">Home</a>
             <a type="button"  href='./planos.html' class="btn-menu    ">Planos</a>
             <a type="button"  href='./cobertura.html'class="btn-menu  ">Cobertura</a>     
         </div>

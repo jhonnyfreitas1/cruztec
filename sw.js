@@ -38,3 +38,7 @@ self.addEventListener('fetch', function (event) {
     })
   );
 });
+
+if(!navigator.onLine){
+  document.write('<h1>ta sem itnernet</h1>')
+}
